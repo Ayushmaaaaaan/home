@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    </head>
+    <body>
+         <div id="loader">
+            <h1>Transforming <span class="gradient_text">Pixels</span> into  <span class="gradient_text">Stories</span></h1>
+            <h1>Crafting <span class="gradient_text">Cinematic Magic</span></h1>
+            <h1>Bringing Your <span class="gradient_text">Vision to Life</span></h1>
+        </div>
+        <!--  -->
+        <!--  -->
+        <!--  -->
+        <div class="popuppbg d-none">
+            <button class="close-button " id="closee"><img src="img/close.png" alt=""></button>
+            <div class=" popup-content">
+                
+                <iframe width="100%" class="frameyt" height="100%" src="https://www.youtube.com/embed/O1rXr_QGv1M?si=OyjFpFbQz6gIBexO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            style="padding: 25px;" allowfullscreen></iframe></div>
+        </div>
+        <div class="email-modal" id="emailModal">
+            <div class="email-dialog">
+                <h3>Book A Meeting</h3>
+                <p>This will open your default email app to contact Ayushman with a pre-filled message.</p>
+                <div class="email-actions">
+                    <button class="confirm" onclick="sendEmail()">Yes, Send Email</button>
+                    <button class="cancel" onclick="closeEmailModal()">Cancel</button>
+                </div>
+                <br>
+                <p>"Want to compose your own email?" <br><a href="#" onclick="copyToClipboard('ayushmanydv.business@gmail.com')" id="copyLink">Copy Email</a></p>
+                
+
+                <span id="copyConfirm" style="display:none; color: #56CCF2; margin-left: 10px;">✔ Copied!</span>
+        </div>
+    </div>
+    <!--  -->
+    <!--  -->
+    <!--  -->
+    <header class="hero">
+        <nav class="navbar container  navbar-expand-lg navbar-dark pt-5">
+            <a class="navbar-brand" href="#">
+                <div class="row">
+                    <div class="col-3">
+                        <img src="img/logo.png" class="nav-logo" alt="">
+                    </div>
+                    <div class="col-9 pt-3 pl-4">
+                        <h4 class="myname ">Ayushman Yaduvanshi</h4>
+                        <p style="font-size:14px;color: rgba(255, 255, 255, .6); margin-top: 0; padding-top: 0;">VideoEditor</p>
+                    </div>
+                </div>
+            </a>
+            
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav ">
+                    <li class="nav-item ">
+                        <a class="nav-link p-2 mr-3 ml-3" href="#gh1">Portfolio </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link p-2 mr-3 ml-3" href="#">FAQ</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a onclick="openEmailModal()" class="nav-link pt-1 pb-1 mr-3 ml-3 callbtn"> Book A Priority Call </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <br class="d-md-none d-sm-block">
+        <br class="d-md-none d-sm-block">
+        <br class="d-md-none d-sm-block">
+        <br class="d-md-none d-sm-block">
+        <div class="container justify-content-center d-flex align-items-center mt-5" style="height: 370px;">
+            <div>
+                <div class="hero-content">
+                    <h1><span class="gradient-text">Unlimited</span> <br> Video Editing</h1>
+                    <p class="subtext">
+                        Expert-level editing for creators and brands. Fast turnarounds, stunning results.
+                    </p>
+                    <div class="features">
+                        <div><span><img src="img/tick.png" class="img_tick" alt=""></span> Fast delivery</div>
+                        <div><span><img src="img/tick.png" class="img_tick" alt=""></span> Unlimited revisions</div>
+                        <div><span><img src="img/tick.png" class="img_tick" alt=""></span> Cancel anytime</div>
+                    </div>
+                    <div class="mt-5 mb-3">
+                        <button class="btn_talk callbtn p-2" onclick="openEmailModal()">Make Your Ideas Happen</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </header>
+    <section class="blackk">
+        <!--  -->
+        <div class="container">
+  <h1 class="text-center display-3 font-weight-bold gradient-text">Portfolio</h1>
+  <br><br>
+
+  <!-- Block 1 (Image Left) -->
+  <div class="row d-flex flex-column flex-lg-row mb-5" id="gh1">
+    <div class="col-sm-12 col-lg-6 thumbb frame_1">
+      <img class="thumb img-fluid" src="https://placehold.co/480x270" alt="">
+    </div>
+    <div class="col-sm-12 col-lg-6 p-3">
+      <h1 class="text-left display-5 font-weight-bold text-light">Iman Gazdgi Style</h1>
+      <p class="para">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum modi doloremque, reprehenderit assumenda quasi error nisi asperiores cum explicabo enim dolor earum cupiditate distinctio voluptatum quidem aut eos ducimus non.</p>
+    </div>
+  </div>
+
+  <!-- Block 2 (Image Right) -->
+  <div class="row d-flex flex-column-reverse flex-lg-row mb-5">
+    <div class="col-sm-12 col-lg-6 p-3">
+      <h1 class="text-left display-5 font-weight-bold text-light">Iman Gazdgi Style</h1>
+      <p class="para">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum modi doloremque, reprehenderit assumenda quasi error nisi asperiores cum explicabo enim dolor earum cupiditate distinctio voluptatum quidem aut eos ducimus non.</p>
+    </div>
+    <div class="col-sm-12 col-lg-6 thumbb frame_2">
+      <img class="thumb img-fluid" src="https://placehold.co/480x270" alt="">
+    </div>
+  </div>
+
+  <!-- Block 3 (Image Left) -->
+  <div class="row d-flex flex-column flex-lg-row mb-5">
+    <div class="col-sm-12 col-lg-6 thumbb frame_3">
+      <img class="thumb img-fluid" src="https://placehold.co/480x270" alt="">
+    </div>
+    <div class="col-sm-12 col-lg-6 p-3">
+      <h1 class="text-left display-5 font-weight-bold text-light">Iman Gazdgi Style</h1>
+      <p class="para">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum modi doloremque, reprehenderit assumenda quasi error nisi asperiores cum explicabo enim dolor earum cupiditate distinctio voluptatum quidem aut eos ducimus non.</p>
+    </div>
+  </div>
+
+  <!-- Block 4 (Image Right) -->
+  <div class="row d-flex flex-column-reverse flex-lg-row mb-5">
+    <div class="col-sm-12 col-lg-6 p-3">
+      <h1 class="text-left display-5 font-weight-bold text-light">Iman Gazdgi Style</h1>
+      <p class="para">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum modi doloremque, reprehenderit assumenda quasi error nisi asperiores cum explicabo enim dolor earum cupiditate distinctio voluptatum quidem aut eos ducimus non.</p>
+    </div>
+    <div class="col-sm-12 col-lg-6 thumbb frame_4">
+      <img class="thumb img-fluid" src="https://placehold.co/480x270" alt="">
+    </div>
+  </div>
+
+  <!-- Block 5 (Image Left) -->
+  <div class="row d-flex flex-column flex-lg-row mb-5">
+    <div class="col-sm-12 col-lg-6 thumbb frame_5">
+      <img class="thumb img-fluid" src="https://placehold.co/480x270" alt="">
+    </div>
+    <div class="col-sm-12 col-lg-6 p-3">
+      <h1 class="text-left display-5 font-weight-bold text-light">Iman Gazdgi Style</h1>
+      <p class="para">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum modi doloremque, reprehenderit assumenda quasi error nisi asperiores cum explicabo enim dolor earum cupiditate distinctio voluptatum quidem aut eos ducimus non.</p>
+    </div>
+  </div>
+<!--  -->
+        <br>
+        <br>
+        <br>
+        <div class="step-container">
+            <div class="heading">
+                <small class="text-light">A STEP-BY-STEP APPROACH</small>
+                <h2>Video Production, without the hassle</h2>
+            </div>
+            <!-- Step 1 -->
+            <div class="step">
+                <div class="step-content">
+                    <h5>Book A Call</h5>
+                    <p>Schedule a free discovery call to discuss your project, your brand, and how I can deliver high-impact video edits tailored to your needs.</p>
+                </div>
+                <div class="icon-box">1</div>
+            </div>
+            <!-- Step 2 -->
+            <div class="step">
+                <div class="step-content text-right">
+                    <h5>Select a package that aligns with your goals and editing needs</h5>
+                    <p>Not sure which plan fits you best? Don’t worry — we’ll help you choose the one that aligns perfectly with your content goals.</p>
+                </div>
+                <div class="icon-box">2</div>
+            </div>
+            <!-- Step 3 -->
+            <div class="step">
+                <div class="step-content">
+                    <h5>Upload your footages</h5>
+                    <p>Once you select a package, you’ll be able to upload your footage and share your vision with us.</p>
+                </div>
+                <div class="icon-box">3</div>
+            </div>
+            <!-- step 4  -->
+            <div class="step">
+                <div class="step-content text-right">
+                    <h5>Review. Revise. Receive.</h5>
+                    <p>
+                        Once your edit is ready, we’ll deliver a low-resolution preview for your review.
+                        Need changes? We’ve got you — revisions are included to make sure it’s perfect.
+                    </p>
+                    <p>
+                        After final approval, you’ll receive the high-resolution video and source files (if requested), ready for use.
+                    </p>
+                </div>
+                <div class="icon-box">4</div>
+            </div>
+        </div>
+        <!--  -->
+        <section class="faq-section">
+            <div class="faq-container">
+                <h2 class="faq-title">Frequently Asked Questions</h2>
+                <div class="faq-item">
+                    <button class="faq-question">How long does it take to edit a video?</button>
+                    <div class="faq-answer">
+                        <p>Turnaround depends on video length and complexity. Most edits are delivered within 2–4 business days.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">Can I request revisions?</button>
+                    <div class="faq-answer">
+                        <p>Yes! All packages come with revision rounds. We'll keep editing until you're fully satisfied.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">What kind of footage should I provide?</button>
+                    <div class="faq-answer">
+                        <p>High-resolution clips (1080p or above), B-roll, logos, and any reference videos help us deliver your vision faster and better.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">What if I don’t know which package to pick?</button>
+                    <div class="faq-answer">
+                        <p>No worries! You can book a free call and we’ll guide you to the best option based on your content goals.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">How do I send you the footage?</button>
+                    <div class="faq-answer">
+                        <p>You can upload your files to any cloud service (Google Drive, Dropbox, WeTransfer, etc.).</p>
+                        <p>However, we prefer <strong>Google Drive</strong> because it's fast and easy. Just make sure to set the sharing permission to <strong>“Anyone with the link can view”</strong> so we can access your footage without delay.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+    <script>
+    const questions = document.querySelectorAll(".faq-question");
+    questions.forEach(q => {
+    q.addEventListener("click", () => {
+    q.classList.toggle("active");
+    const answer = q.nextElementSibling;
+    answer.style.maxHeight = answer.style.maxHeight ? null : answer.scrollHeight + "px";
+    });
+    });
+    </script>
+    <!--  -->
+    <!--  -->
+    <script type="text/javascript">
+    var typed = new Typed('.element', {
+    strings: [" a storyteller of visual.", "master of visual rhyme.", "A Crafter of visual tales."],
+    typeSpeed: 100,
+    backSpeed: 35,
+    loop: true,
+    });
+    </script>
+    <script>
+    var frame_1 = document.querySelector('.frame_1');
+    var frame_2 = document.querySelector('.frame_2');
+    var frame_3 = document.querySelector('.frame_3');
+    var frame_4 = document.querySelector('.frame_4');
+    var frame_5 = document.querySelector('.frame_5')
+    // Using querySelector instead of getElementsByClassName as it returns a single element
+    var popupp_1 = document.querySelector('.popuppbg'); // Using querySelector instead of getElementsByClassName as it returns a single element
+    var frame = document.querySelector('.frameyt');
+    var popop = document.querySelector('.popup-content')
+    // urls
+    var url1 = "St1HPQclnNc";
+    var url2 = "FaAFLTVG2vQ";
+    var url3 = "JvVF6sE0_XE";
+    var url4 = "YYSxGacPJow";
+    var url5 = "YYSxGacPJow";
+    //  frame click functions
+    frame_1.addEventListener("click", function() {
+    popupp_1.setAttribute("class", "popuppbg");
+    popop.setAttribute("class", "popup-content animate__animated animate__fadeIn")
+    frame.setAttribute("src", "https://www.youtube.com/embed/" + url1 + "?autoplay=true");
+    });
+    frame_2.addEventListener("click", function() {
+    // Your click function logic here
+    popupp_1.setAttribute("class", "popuppbg");
+    frame.setAttribute("src", "https://www.youtube.com/embed/" + url2 + "?autoplay=true");
+    });
+    frame_3.addEventListener("click", function() {
+    // Your click function logic here
+    popupp_1.setAttribute("class", "popuppbg");
+    frame.setAttribute("src", "https://www.youtube.com/embed/" + url3 + "?autoplay=true");
+    });
+    frame_4.addEventListener("click", function() {
+    // Your click function logic here
+    popupp_1.setAttribute("class", "popuppbg");
+    frame.setAttribute("src", "https://www.youtube.com/embed/" + url4 + "?autoplay=true");
+    });
+    frame_5.addEventListener("click", function() {
+    // Your click function logic here
+    popupp_1.setAttribute("class", "popuppbg");
+    frame.setAttribute("src", "https://www.youtube.com/embed/" + url5 + "?autoplay=true");
+    });
+    var closebutton = document.getElementById('closee')
+    closebutton.addEventListener("click", function() {
+    popupp_1.setAttribute("class", "popuppbg d-none");
+    frame.setAttribute("src", "none")
+    });
+    </script>
+    <script>
+    function scrollToSection(sectionId) {
+    var section = document.getElementById(sectionId);
+    if (section) {
+    section.scrollIntoView({
+    behavior: 'smooth'
+    });
+    }
+    }
+    </script>
+    <script>
+    // Define the function to move the loader out of the viewport
+    function moveLoaderOutOfViewport() {
+    // Move the loader out of viewport
+    document.getElementById('loader').style.top = '-100%';
+    }
+    // Delay the execution of the function by 3.5 seconds after the window loads
+    window.addEventListener('load', function() {
+    setTimeout(moveLoaderOutOfViewport, 3500);
+    });
+    </script>
+    <script>
+    function openEmailModal() {
+    document.getElementById('emailModal').style.display = 'flex';
+    }
+    function closeEmailModal() {
+    document.getElementById('emailModal').style.display = 'none';
+    }
+    function sendEmail() {
+    closeEmailModal();
+    window.location.href = "mailto:ayushmanydv.business@gmail.com?subject=Video%20Editing%20Inquiry&body=Hi%20Ayushman%2C%0A%0AI%27m%20interested%20in%20your%20video%20editing%20services.%20Here%20are%20the%20details%20of%20my%20project%3A%0A%0A-%20Type%20of%20video%3A%0A-%20Estimated%20length%3A%0A-%20Deadline%3A%0A-%20Any%20references%3F%3A%0A%0AThanks%2C";
+    }
+    
+    function copyToClipboard(text) {
+    navigator.clipboard.writeText(text).then(function() {
+    document.getElementById("copyConfirm").style.display = "inline";
+    setTimeout(() => {
+    document.getElementById("copyConfirm").style.display = "none";
+    }, 2000);
+    });
+    }
+    </script>
+    <!--  -->
+    <!--  -->
+    <!--  -->
+    
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+</body>
+</html>
