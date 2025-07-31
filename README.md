@@ -10,10 +10,10 @@ me = {
     "code": ["Python", "HTML", "CSS"],
     "tools": ["still in development"],
     "interests": ["Data Analysis", "Machine Learning", "Statistics", "Visualization", "AI"],
-    "currently_learning": "Deep Learning & Generative AI",
-    "challenge": "Currently exploring projects in Data Science and contributing to open source"
+    "currently_learning": "Libraries In Python",
+    "challenge": "Foundational knowledge is being built"
 }
 ```
-<img src="https://media.giphy.com/media/LnQjpWaON8nhr21vNW/giphy.gif" width="60"> <em><b>I love connecting with different people</b> so if you want to say <b>hi, I'll be happy to meet you more!</b> :)</em>
+<img src="https://media.giphy.com/media/LnQjpWaON8nhr21vNW/giphy.gif" width="60"> <em><b>hi, Every day is a New Start... So Smile 📷 !</b> :)</em>
 ---
 
