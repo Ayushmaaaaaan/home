@@ -92,7 +92,7 @@
         <!--  -->
         <!--  -->
         <div class="popuppbg d-none">
-            <button class="close-button " id="closee"><img src="img/close.png" alt=""></button>
+            <button class="close-button " onclick="closePopup()"><img src="img/close.png" alt=""></button>
             <div class=" popup-content">
                 
                 <iframe width="100%" class="frameyt" height="100%" src="https://www.youtube.com/embed/O1rXr_QGv1M?si=OyjFpFbQz6gIBexO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -338,14 +338,7 @@
             </script>
             <!--  -->
             <!--  -->
-            <script type="text/javascript">
-            var typed = new Typed('.element', {
-            strings: [" a storyteller of visual.", "master of visual rhyme.", "A Crafter of visual tales."],
-            typeSpeed: 100,
-            backSpeed: 35,
-            loop: true,
-            });
-            </script>
+            
             <script>
             var frame_1 = document.querySelector('.frame_1');
             var frame_2 = document.querySelector('.frame_2');
@@ -388,11 +381,11 @@
             popupp_1.setAttribute("class", "popuppbg");
             frame.setAttribute("src", "https://www.youtube.com/embed/" + url5 + "?autoplay=true");
             });
-            var closebutton = document.getElementById('closee')
-            closebutton.addEventListener("click", function() {
+            function closePopup() {
             popupp_1.setAttribute("class", "popuppbg d-none");
-            frame.setAttribute("src", "none")
-            });
+            frame.setAttribute("src", "none");  // Note: Setting to "" (empty string) might be more reliable to stop playback
+            };
+            
             </script>
             <script>
             function scrollToSection(sectionId) {
@@ -431,7 +424,7 @@
             navigator.clipboard.writeText(text).then(function() {
             document.getElementById("copyConfirm").style.display = "inline";
             setTimeout(() => {
-            document.getElementById("copyConfirm").style.display = "none";
+            document.getElementById("copyConfirm").style.display = "";
             }, 2000);
             });
             }
