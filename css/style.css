@@ -236,7 +236,7 @@ width: 87%;
 .thumbb{
 transition: 0.3s all ease-in-out;
 border-radius: 15px;
-padding: 0;
+padding: 0!important;
 }
 .thumbb:hover{
 scale: 1.05;
