@@ -452,3 +452,7 @@ color: #2F80ED;
 .pointer{
   cursor: pointer;
 }
+para{
+  text-wrap: wrap;
+  text-wrap-style: balance;
+}
