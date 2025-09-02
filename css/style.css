@@ -233,10 +233,12 @@ border-radius: 15px;
 height: 270px;
 width: 87%;
 }
+
 .thumbb{
 transition: 0.3s all ease-in-out;
 border-radius: 15px;
-padding: 0!important;
+padding: 0;
+width:100%
 }
 .thumbb:hover{
 scale: 1.05;
