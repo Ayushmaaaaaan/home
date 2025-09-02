@@ -312,6 +312,10 @@ background: -webkit-linear-gradient(#fff 0% ,  #56CCF2 45%, #000046 100%);
 -webkit-background-clip: text;
 -webkit-text-fill-color: transparent;
 }
+
+.wew{
+  width:100%
+}
 .popuppbg {
 position: fixed;
 top: 0;
