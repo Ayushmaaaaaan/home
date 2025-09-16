@@ -6,10 +6,12 @@ font-style: normal;
 }
 body{
   background: black;
+  cursor: none;
 }
 *{
 font-family: Arialnova;
 scroll-behavior: smooth;
+
 }
 body{
 scroll-behavior: smooth;
@@ -356,7 +358,7 @@ padding: 10px;
 height: 100%;
 padding: 15px;
 /* Add a shadow for depth */
-z-index: 1;
+z-index: 100;
 /* Ensure the popup is on top of the background */
 }
 .close-button {
@@ -379,7 +381,7 @@ color: inherit;
 /* Inherit text color */
 padding: 5px 10px;
 /* Adjust padding as needed */
-cursor: pointer;
+cursor: pointer!important;
 z-index: 999;
 }
 .close-button>img {
@@ -474,5 +476,29 @@ color: #2F80ED;
 }
 para{
   text-wrap: wrap;
-  text-wrap-style: balance;
+  text-wrap-style: balance
+}
+
+.cursor, .cursor-follower {
+  position: fixed;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  mix-blend-mode: difference;
+  z-index: 9999;
+}
+
+.cursor {
+  width: 8px;
+  height: 8px;
+  background: white;
+}
+
+.cursor-follower {
+  width: 40px;
+  height: 40px;
+  border: 2px solid white;
+  transition: transform 0.2s ease;
 }

@@ -45,17 +45,19 @@
         .gradient-text {
         font-size: 78px;
         background: -webkit-linear-gradient(#fff 0% ,  #56CCF2 35%, #000046 100%);
-        -webkit-background-clip: text
+        -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         font-weight: bolder;
         }
         </style>
     </head>
     <body>
+        <div class="cursor"></div>
+        <div class="cursor-follower"></div>
         <div id="loader">
-            <h1>Transforming <span class="gradient_text">Pixels</span> into  <span class="gradient_text">Stories</span></h1>
-            <h1>Crafting <span class="gradient_text">Cinematic Magic</span></h1>
-            <h1>Bringing Your <span class="gradient_text">Vision to Life</span></h1>
+            <h1>Transforming <span class="gradient-text">Pixels</span> into  <span class="gradient-text">Stories</span></h1>
+            <h1>Crafting <span class="gradient-text">Cinematic Magic</span></h1>
+            <h1>Bringing Your <span class="gradient-text">Vision to Life</span></h1>
         </div>
        <!-- Modal -->
         <div class="modal fade" id="socialModal" tabindex="-1" role="dialog" aria-labelledby="socialModalLabel" aria-hidden="true">
@@ -64,25 +66,25 @@
                     <div class="modal-header border-0">
                         <h5 class="modal-title" id="socialModalLabel">Connect with Me</h5>
                         <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true"><img style="height: 40px; width: 40px ; border-radius: 50%;border: 3px solid rgb(255,255,255);"  src="img/close.png"></span>
+                        <span aria-hidden="true"><img style="height: 40px; width: 40px; border-radius: 50%; border: 3px solid rgb(255,255,255);" src="img/close.png" alt="Close"></span>
                         </button>
                     </div>
                     <div class="modal-body text-center p-4">
                         
                         <div class="d-flex justify-content-between align-items-center mt-2">
-                            <a href="https://www.fiverr.com/ayushmanyaduv" target="_blank" class="text-success">
-                                <img src="img/fiverr.png" style="height:45px" alt="">
+                            <a href="https://www.fiverr.com/ayushmanyaduv" target="_blank" rel="noopener noreferrer" class="text-success">
+                                <img src="img/fiverr.png" style="height:45px" alt="Fiverr">
                             </a>
-                            <a href="https://www.instagram.com/ayushmannn_04" target="_blank" class="text-danger">
+                            <a href="https://www.instagram.com/ayushmannn_04" target="_blank" rel="noopener noreferrer" class="text-danger">
                                 <i class="fab fa-instagram fa-3x"></i>
                             </a>
-                            <a href="https://www.linkedin.com/in/ayushmanyaduv/" target="_blank" class="text-primary">
+                            <a href="https://www.linkedin.com/in/ayushmanyaduv/" target="_blank" rel="noopener noreferrer" class="text-primary">
                                 <i class="fab fa-linkedin fa-3x"></i>
                             </a>
-                            <a onclick="copyToClipboard('businessayushmann@gmail.com')" class="text-light pointer">
-                                <i class="fas fa-envelope fa-3x"></i><br>
-                                <span id="copyConfirm" style="display:none; color: #56CCF2; margin-left: 10px;">✔ Copied!</span>
-                            </a>
+                            <a onclick="copyToClipboard('businessayushmann@gmail.com','copyConfirmSocial')" class="text-light pointer" role="button">
++                                <i class="fas fa-envelope fa-3x" aria-hidden="true"></i><br>
++                                <span id="copyConfirmSocial" style="display:none; color: #56CCF2; margin-left: 10px;">✔ Copied!</span>
++                           </a>
                         </div>
                     </div>
                     <br><br>
@@ -101,10 +103,10 @@
         <div class="email-modal" id="emailModal">
             <div class="email-dialog">
                 <div class="close-button" onclick="closeEmailModal()" > <img src="img/close.png"></div>
-                <iframe src="https://calendly.com/businessayushmann/30min" height="600px" width="1150px"></iframe>
-                <p>"Want to compose your own email?" <br><a  onclick="copyToClipboard('ayushmanydv.business@gmail.com')" id="copyLink">Copy Email</a></p>
+                <iframe src="https://calendly.com/businessayushmann/30min" height="600" width="100%" style="width:1150px;"></iframe>
+                 <p>"Want to compose your own email?" <br><a onclick="copyToClipboard('ayushmanydv.business@gmail.com','copyConfirmEmail')" id="copyLink" href="#" role="button">Copy Email</a></p>
                 
-                <span id="copyConfirm" style="display:none; color: #56CCF2; margin-left: 10px;margin-top: 80px;">✔ Copied!</span>
+                <span id="copyConfirmEmail" style="display:none; color: #56CCF2; margin-left: 10px; margin-top: 80px;">✔ Copied!</span>
             </div>
         </div>
         <!--  -->
@@ -149,7 +151,7 @@
             <div class="container justify-content-center d-flex align-items-center mt-5" style="height: 370px;">
                 <div>
                     <div class="hero-content">
-                        <h1><span class="gradient-ext">Unlimited</span> <br> Video Editing</h1>
+                        <h1><span class="gradient-text">Unlimited</span> <br> Video Editing</h1>
                         <p class="subtext">
                             Expert-level editing for creators and brands. Fast turnarounds, stunning results.
                         </p>
@@ -171,7 +173,7 @@
             <div class="container">
                 <br>
                 <br>
-                <h1 class="text-center display-3 font-weight-bold gradient-ext">Portfolio</h1>
+                <h1 class="text-center display-3 font-weight-bold gradient-text">Portfolio</h1>
                 <br><br>
                 <!-- Block 1 (Image Left) -->
                 <div class="row d-flex flex-column flex-lg-row wew" id="gh1">
@@ -185,8 +187,11 @@
 
                         🎨 Balanced tones, consistent skin tones, and cinematic looks paired with crisp, leveled audio and subtle SFX.
 
-                        🧩 A tight edit that highlights storytelling, technical finesse, and real-world deliverables for clients.
+                        🧩 A tight edit that highlights storytelling, technical finesse, and real-world deliverables for clients.</p>
                 </div>
+                </div>
+
+
                  <br> <br><br>
                 <!-- Block 2 (Image Right) -->
                 <div class="row d-flex flex-column-reverse flex-lg-row mb-5 wew">
@@ -201,6 +206,8 @@
                         <img class="thumb img-fluid" src="img/2.png" alt="">
                     </div>
                 </div>
+
+
                 <!-- Block 3 (Image Left) -->
                 <div class="row d-flex flex-column flex-lg-row mb-5 wew">
                     <div class="col-sm-12 col-lg-6 thumbb pointer frame_3">
@@ -216,6 +223,8 @@
                         🚀 Perfect for promos, explainers, and thought‑leadership clips across socials
                 </div>
                 </div>
+
+
               
                <div class="row d-flex flex-column-reverse flex-lg-row mb-5 wew">
                     <div class="col-sm-12 col-lg-6 p-0 pl-3">
@@ -229,6 +238,7 @@
                         <img class="thumb img-fluid" src="img/4.png" alt="">
                     </div>
                 </div>
+
                
                 <div class="row d-flex flex-column flex-lg-row mb-5 wew">
                     <div class="col-sm-12 col-lg-6 thumbb pointer frame_5">
@@ -246,9 +256,12 @@
                     </div>
                 </div>
                
+
                 <br>
                 <br>
                 <br>
+
+
                 <div class="step-container">
                     <div class="heading">
                         <small class="text-light">A STEP-BY-STEP APPROACH</small>
@@ -294,6 +307,9 @@
                     </div>
                 </div>
                 <!--  -->
+
+
+
                 <section class="faq-section container-fluid">
                     <div class="faq-container">
                         <h2 class="faq-title" id="fandq">Frequently Asked Questions</h2>
@@ -330,8 +346,13 @@
                         </div>
                     </div>
                 </section>
+
+                
                 <br>    
                 <br>
+
+
+
             </section>
             <script>
             const questions = document.querySelectorAll(".faq-question");
@@ -390,7 +411,7 @@
             });
             function closePopup() {
             popupp_1.setAttribute("class", "popuppbg d-none");
-            frame.setAttribute("src", "none");  // Note: Setting to "" (empty string) might be more reliable to stop playback
+            frame.setAttribute("src", "");  // Note: Setting to "" (empty string) might be more reliable to stop playback
             };
             
             </script>
@@ -427,33 +448,75 @@
             window.open("https://mail.google.com/mail/?view=cm&fs=1&to=ayushmanyaduvanshi01@gmail.com&su=Video%20Editing%20Inquiry&body=Hi%20Ayushman%2C%0A%0AI%27m%20interested%20in%20your%20video%20editing%20services.%20Here%20are%20the%20details%20of%20my%20project%3A%0A%0A-%20Type%20of%20video%3A%0A-%20Estimated%20length%3A%0A-%20Deadline%3A%0A-%20Any%20references%3F%3A%0A%0AThanks%2C", "_blank");;
             }
             
-            function copyToClipboard(text) {
-            navigator.clipboard.writeText(text).then(function() {
-            document.getElementById("copyConfirm").style.display = "inline";
-            setTimeout(() => {
-            document.getElementById("copyConfirm").style.display = "";
-            }, 2000);
-            });
+            function copyToClipboard(text, confirmId) {
+              navigator.clipboard.writeText(text).then(function() {
+                if (!confirmId) return;
+                const el = document.getElementById(confirmId);
+                if (el) {
+                  el.style.display = "inline";
+                  setTimeout(() => { el.style.display = "none"; }, 2000);
+                }
+              }).catch(function(err){
+                console.warn('Clipboard write failed', err);
+              });
             }
-            // cursor property
-            // <a href="#" id="copyConfirm">Copy</a>
+
             const copy = document.getElementById('copyLink');
-            copy.addEventListener('click', function (event) {
-            event.preventDefault(); // prevent default link behavior
-            // Change to 'progress' cursor on click
-            copy.style.cursor = 'copy';
-            // After 2 seconds, set it back to 'pointer'
-            setTimeout(() => {
-            copy.style.cursor = 'pointer';
-            }, 1500);
-            });
+            if (copy) {
+              copy.addEventListener('click', function (event) {
+                event.preventDefault(); // prevent default link behavior
+                copy.style.cursor = 'copy';
+                setTimeout(() => { copy.style.cursor = 'pointer'; }, 1500);
+              });
+            }
             
             </script>
             
             <!--  -->
             <!--  -->
             <!--  -->
-            
+            <script>
+                const cursor = document.querySelector(".cursor");
+                const follower = document.querySelector(".cursor-follower");
+
+                let mouseX = 0, mouseY = 0;
+                let posX = 0, posY = 0;
+
+                // Move main cursor instantly
+                document.addEventListener("mousemove", e => {
+                  mouseX = e.clientX;
+                  mouseY = e.clientY;
+                  cursor.style.top = mouseY + "px";
+                  cursor.style.left = mouseX + "px";
+                });
+
+                // Smooth follower animation
+                function animateFollower() {
+                  posX += (mouseX - posX) / 8;
+                  posY += (mouseY - posY) / 8;
+
+                  follower.style.top = posY + "px";
+                  follower.style.left = posX + "px";
+
+                  requestAnimationFrame(animateFollower);
+                }
+                animateFollower();
+
+                // Interactions on hover
+                const hoverables = document.querySelectorAll("a, button");
+
+                hoverables.forEach(el => {
+                  el.addEventListener("mouseenter", () => {
+                    follower.style.transform = "translate(-50%, -50%) scale(1.5)";
+                    follower.style.borderColor = "cyan";
+                  });
+                  el.addEventListener("mouseleave", () => {
+                    follower.style.transform = "translate(-50%, -50%) scale(1)";
+                    follower.style.borderColor = "white";
+                  });
+                });
+
+            </script>
             <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
             <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
             <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
